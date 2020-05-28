@@ -10,8 +10,6 @@ It was built for modern browsers using _TypeScript, CSS3 and HTML5_ and Angular 
 - Customer styles (Background color, text color, shadow, etc.)
 - Responsive
 
-![screenshot](https://raw.githubusercontent.com/jyzbamboo/ngx-flowchart/master/src/assets/screenshot.png)
-
 ## Installation
 
 To use ngx-datatable in your project install it via [npm](https://www.npmjs.com/package/ngx-flowchart):

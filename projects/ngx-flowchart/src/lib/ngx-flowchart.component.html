@@ -1,0 +1,46 @@
+<div class="flow-total">
+    <ng-container *ngFor="let item of data; let i = index">
+        <ng-container *ngIf="i !== 0">
+            <svg style="margin: .1rem 0 .2rem 0; width: 24px; height: 24px;" xmlns="http://www.w3.org/2000/svg"
+                width="100%" height="100%" viewBox="0 0 24 24" fill="#222b45">
+                <g data-name="Layer 2">
+                    <g data-name="arrow-downward">
+                        <rect width="24" height="24" opacity="0"></rect>
+                        <path
+                            d="M18.77 13.36a1 1 0 0 0-1.41-.13L13 16.86V5a1 1 0 0 0-2 0v11.86l-4.36-3.63a1 1 0 1 0-1.28 1.54l6 5 .15.09.13.07a1 1 0 0 0 .72 0l.13-.07.15-.09 6-5a1 1 0 0 0 .13-1.41z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+        </ng-container>
+        <div *ngIf="item.groupData == undefined" class="flow-operation">
+            <span (click)="clickFlow(item)"
+                [ngStyle]="{'background': options.background, 'color': options.textColor, 
+            'border-radius': options.borderRadius,'box-shadow': options.shadow, 'min-width': options.width}">{{item.name}}</span>
+        </div>
+        <div *ngIf="item.groupData !== undefined" class="flow-group" [ngStyle]="{'background': options.groupBackground, 'color': options.groupTextColor, 
+                    'border-radius': options.groupBorderRadius,'box-shadow': options.groupShadow}">
+            <span (click)="clickFlow(item)" style='font-size: 1.2rem'>{{item.name}}</span>
+            <ng-container *ngFor="let d of item.groupData; let j = index">
+                <div class="flow-operation">
+                    <span (click)="clickFlow(d)"
+                        [ngStyle]="{'background': options.background, 'color': options.textColor, 
+                    'border-radius': options.borderRadius,'box-shadow': options.shadow, 'min-width': options.width}">{{d.name}}</span>
+                    <ng-container *ngIf="j !== (item.groupData.length - 1)">
+                        <svg style="margin: .3rem 0 0 0; width: 24px; height: 24px" xmlns="http://www.w3.org/2000/svg"
+                            width="100%" height="100%" viewBox="0 0 24 24" fill="#222b45">
+                            <g data-name="Layer 2">
+                                <g data-name="arrow-downward">
+                                    <rect width="24" height="24" opacity="0"></rect>
+                                    <path
+                                        d="M18.77 13.36a1 1 0 0 0-1.41-.13L13 16.86V5a1 1 0 0 0-2 0v11.86l-4.36-3.63a1 1 0 1 0-1.28 1.54l6 5 .15.09.13.07a1 1 0 0 0 .72 0l.13-.07.15-.09 6-5a1 1 0 0 0 .13-1.41z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </ng-container>
+                </div>
+            </ng-container>
+        </div>
+    </ng-container>
+</div>

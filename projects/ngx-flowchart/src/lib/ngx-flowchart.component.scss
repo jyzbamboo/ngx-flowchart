@@ -1,0 +1,39 @@
+.flow-total {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .flow-group {
+    padding: .6rem 2rem .5rem 2rem;
+    background: linear-gradient(to bottom, #B9B9B9 0%, #FEFEFE 100%);
+    color: black;
+    margin-bottom: .3rem;
+    border-radius: 3px;
+    box-shadow: 0 0.3rem .5rem 0 rgba(44,51,73,.5);
+    min-width: 200px;
+  }
+  .flow-operation {
+    display: flex;
+    margin: .3rem 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.89rem;
+    flex-direction: column;
+  }
+  .flow-operation span {
+    background: #0e3e7d;
+    color: white;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0px #333;
+  }
+  .flow-operation nb-icon {
+    margin-top: .3rem;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .flow-total span {
+    cursor: pointer;
+    min-width: 200px;
+  }
