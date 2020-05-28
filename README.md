@@ -10,7 +10,7 @@ It was built for modern browsers using _TypeScript, CSS3 and HTML5_ and Angular 
 - Customer styles (Background color, text color, shadow, etc.)
 - Responsive
 
-![screenshot](https://raw.githubusercontent.com/jyzbamboo/ngx-flowchart/master/src/assets/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/jyzbamboo/ngx-flowchart/master/src/assets/screen-shot.png)
 
 ## Installation
 
