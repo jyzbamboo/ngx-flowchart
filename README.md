@@ -149,3 +149,8 @@ export class AppComponent {
 ### Methods:
 
 - `clickName`: Click event, will get the raw data.
+
+## TODO
+
+- More options (e.g., margin, padding)
+- More methods (e.g., mouse hover, mouse double click)
