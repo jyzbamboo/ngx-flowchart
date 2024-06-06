@@ -14,7 +14,7 @@ It was built for modern browsers using _TypeScript, CSS3 and HTML5_ and Angular 
 
 ## Installation
 
-To use ngx-datatable in your project install it via [npm](https://www.npmjs.com/package/ngx-flowchart):
+To use ngx-flowchart in your project install it via [npm](https://www.npmjs.com/package/ngx-flowchart):
 
 ```
 npm i ngx-flowchart --save
